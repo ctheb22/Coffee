@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee</title>
+    {% if coffee_list %}
+    <ul>
+    {% for coffee in coffee_list %}
+        <li>{{ coffee.coffee_name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No coffees are available.</p>
+{% endif %}
+</head>
+<body>
+
+</body>
+</html>
